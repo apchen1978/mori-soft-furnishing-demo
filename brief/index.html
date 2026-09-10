@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="MORI 空間需求 Brief：先把採光、隱私與生活需求整理成一次諮詢可用的摘要。" />
+    <title>MORI 空間需求 Brief</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="experience">
+      <section class="visual-stage" aria-labelledby="page-title">
+        <header class="site-header">
+          <a class="brand" href="https://apchen1978.github.io/mori-soft-furnishing-demo/" aria-label="回到 MORI 軟裝網站">MORI <span>INTERIORS</span></a>
+          <span class="edition">SPACE BRIEF · 01</span>
+        </header>
+        <img class="stage-image" src="./mori-interior.webp" alt="柔和採光下的現代居家窗簾空間" />
+        <div class="stage-content">
+          <p class="eyebrow">BEFORE THE FIRST VISIT</p>
+          <h1 id="page-title">先把你想要的光，整理成一份可談的需求。</h1>
+          <p class="lead">不用先懂布料或報價。花兩分鐘選出空間、生活需求與時程，帶走一份可交給設計師或帶進 LINE 對話的空間需求摘要。</p>
+          <div class="trust-line">
+            <span>01 選擇需求</span>
+            <span>02 生成摘要</span>
+            <span>03 帶去諮詢</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="workbench" aria-label="建立空間需求 Brief">
+        <header class="workbench-header">
+          <a class="mobile-brand brand" href="https://apchen1978.github.io/mori-soft-furnishing-demo/" aria-label="回到 MORI 軟裝網站">MORI <span>INTERIORS</span></a>
+          <div>
+            <span>CONSULTATION PREP</span>
+            <p>約 2 分鐘 · 不會傳送或保存資料</p>
+          </div>
+        </header>
+
+        <div class="workspace">
+          <form id="brief-form" class="form-panel">
+          <div class="panel-heading">
+            <p class="eyebrow">YOUR SPACE</p>
+            <h2>告訴 MORI，這個空間現在需要什麼。</h2>
+            <p>沒有正確答案；不知道的項目可先保留，現場丈量時再確認。</p>
+          </div>
+
+          <fieldset>
+            <legend><span>01</span> 這是哪一個空間？</legend>
+            <div class="choice-grid" data-field="room" data-single="true">
+              <button type="button" data-value="客廳">客廳</button>
+              <button type="button" data-value="主臥">主臥</button>
+              <button type="button" data-value="兒童房">兒童房</button>
+              <button type="button" data-value="商業空間">商業空間</button>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend><span>02</span> 最想先改善什麼？<small>最多選兩項</small></legend>
+            <div class="choice-grid" data-field="priorities" data-limit="2">
+              <button type="button" data-value="西曬與眩光">西曬與眩光</button>
+              <button type="button" data-value="隱私">隱私</button>
+              <button type="button" data-value="睡眠遮光">睡眠遮光</button>
+              <button type="button" data-value="空間氣氛">空間氣氛</button>
+              <button type="button" data-value="好清潔與耐用">好清潔與耐用</button>
+              <button type="button" data-value="隔音與安定感">隔音與安定感</button>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend><span>03</span> 你的時間點？</legend>
+            <div class="choice-grid" data-field="timeline" data-single="true">
+              <button type="button" data-value="正在規劃裝修">正在規劃裝修</button>
+              <button type="button" data-value="即將入住">即將入住</button>
+              <button type="button" data-value="已入住，想改善">已入住，想改善</button>
+            </div>
+          </fieldset>
+
+          <div class="field-row">
+            <label>大約有幾扇窗？
+              <select id="windows" name="windows">
+                <option value="尚未確認">尚未確認</option>
+                <option value="1–2 扇">1–2 扇</option>
+                <option value="3–5 扇">3–5 扇</option>
+                <option value="6 扇以上">6 扇以上</option>
+              </select>
+            </label>
+            <label>偏好的空間感受？
+              <select id="mood" name="mood">
+                <option value="尚未確認">尚未確認</option>
+                <option value="安靜自然">安靜自然</option>
+                <option value="溫暖柔和">溫暖柔和</option>
+                <option value="俐落現代">俐落現代</option>
+              </select>
+            </label>
+          </div>
+
+          <label class="notes">還有什麼希望保留或避開？
+            <textarea id="notes" rows="4" placeholder="例如：下午西曬很強、想保留窗外景色、家裡有貓…"></textarea>
+          </label>
+
+          <button class="primary-action" type="submit">整理我的空間需求 <span>→</span></button>
+          </form>
+
+          <aside class="brief-panel" aria-live="polite">
+          <div class="brief-topline">
+            <p class="eyebrow">CONSULTATION BRIEF</p>
+            <span id="brief-status">等待你的選擇</span>
+          </div>
+          <h2 id="brief-title">你的空間需求會整理在這裡。</h2>
+          <p id="brief-summary" class="brief-summary">先選一個空間與最在意的事情；MORI 會把它轉成一份第一次諮詢可直接使用的摘要。</p>
+
+          <div class="brief-section">
+            <p class="section-label">現場優先確認</p>
+            <ul id="checklist" class="checklist">
+              <li>窗型、開口方向與實際尺寸</li>
+              <li>早晚採光、視線與隱私需求</li>
+              <li>材質、軌道與預算的可行範圍</li>
+            </ul>
+          </div>
+
+          <div class="brief-section unknown-section">
+            <p class="section-label">還需要確認</p>
+            <p id="unknowns">丈量尺寸、現場光線與最終材質，仍應由現場確認。</p>
+          </div>
+
+          <div class="brief-actions">
+            <button id="copy-brief" type="button" disabled>複製摘要</button>
+            <a href="https://apchen1978.github.io/mori-soft-furnishing-demo/#consultation">回 MORI 預約諮詢 <span>↗</span></a>
+          </div>
+          <p class="boundary">這不是報價、下單或設計承諾；資料只留在你的瀏覽器，正式提案仍以現場丈量與人工確認為準。</p>
+          </aside>
+        </div>
+      </section>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>
