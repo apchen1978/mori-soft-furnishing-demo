@@ -1,6 +1,6 @@
-# MORI — Curtain & Soft-Furnishing Brand Website
+# MORI — Brand Website Showcase
 
-Public showcase of the MORI brand site (窗簾與軟裝), published as a portfolio piece.
+Public showcase of the MORI brand site, published as a portfolio piece.
 
 ## Try it
 
@@ -8,16 +8,16 @@ https://apchen1978.github.io/mori-soft-furnishing-demo/
 
 ## About this showcase
 
-- Premium residential editorial direction for a curtain and soft-furnishing brand
+- Premium residential editorial direction for a home-interiors brand
 - Sections: hero → services → selected spaces → process → trade intelligence → consultation
 - Built with plain HTML/CSS/JavaScript — no framework, no build step
 
-## Truthful labels (important)
+## Notes on this demo
 
 - **LINE 連結是佔位符**：`href="#line-notice"`，帳號設定後才會換成真實連結
 - **表單為展示用途**：不會傳送任何資料，送出後只顯示流程說明
-- **貿易觀點區為架構展示**：SIMULATION / INTERNAL ARCHITECTURE PREVIEW，不提供線上報價、下單、付款、物流或外部資料傳送
-- 無虛構客戶案例、成交數字、流量或轉換成果
+- **貿易觀點區為架構展示**：demo preview，不提供線上報價、下單、付款、物流或外部資料傳送
+- 不含客戶案例、成交數字、流量或轉換成果
 
 ## Run locally
 
